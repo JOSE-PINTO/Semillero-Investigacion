@@ -1,0 +1,156 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: sans-serif;
+}
+
+header {
+  background: linear-gradient(-45deg, green, #fff);
+  display: flex;
+  padding: 10px;
+  text-align: center;
+}
+header img {
+  width: 60px;
+  height: 40px;
+  cursor: pointer;
+}
+
+header h1 {
+  font-size: 30px;
+  margin-left: 50px;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+
+
+.uni ul {
+  display: flex;
+  margin: 20px 10px;
+  
+  list-style: none;
+  background: linear-gradient(-45deg, green, #fff);
+  border-radius: 10px;
+  width: 100%;
+  height: 41px;
+}
+.uni ul li {
+  padding-right: 60px;
+  padding-top: 10px;
+
+  text-decoration: none;
+}
+.uni ul li a {
+  text-decoration: none;
+  color: green;
+  height: 20px;
+  font-size: 19px;
+  font-family: "Times New Roman", Times, serif;
+
+  padding: 10px;
+ 
+}
+.uni ul li a:hover {
+  color: black;
+  cursor: pointer;
+  background: gray;
+}
+.img{
+    cursor: pointer;
+}
+.uni ul li a i {
+  height: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.img{
+    
+}
+
+/* contenedor de columna */
+.container {
+  width: 1000px;
+  height: 400px;
+  background: #ccc;
+  margin: 100px auto;
+  display: flex;
+}
+/* posicion y aparencia de la columna principal */
+.columna {
+  height: 100%;
+  flex: 1;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 12px;
+  position: relative;
+  transition: 0.7s;
+}
+/* modificar los hijos de columna uno por uno */
+.columna:nth-child(1) {
+    background: linear-gradient( green, #fff);   
+}
+
+.columna:nth-child(2) {
+    background: linear-gradient( rgb(11, 4, 77), #fff);   
+}
+
+.columna:nth-child(3) {
+    background: linear-gradient( rgb(2, 102, 77), #fff);   
+}
+/* modificadores del texto */
+h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600px;
+}
+
+h2:hover {
+  color: blueviolet;
+  cursor: pointer;
+}
+/* apariencia del texto  */
+.seccion {
+  max-width: 230px;
+  font-size: 12px;
+  margin: 20px 0px;
+  display: none;
+}
+/* apariencia del boton */
+.seccion button {
+  border: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  padding: 8px 18px;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 17px;
+  font-size: 12px;
+}
+/* color al boton al ser seleccionado */
+button:hover {
+  color: blueviolet;
+}
+/* propiedades de imagen */
+.columna img {
+  width: 90%;
+  position: absolute;
+  height: 120px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 12px;
+}
+/* animacion de seleccion */
+.columna:hover {
+  flex-grow: 2.5;
+}
+/* mostrar el texto de la seleccion */
+.columna:hover .seccion {
+  display: block;
+}
+/* posicionar el texto a la izquerda */
+.columna:hover h2 {
+  text-align: left;
+}
